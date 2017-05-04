@@ -60,7 +60,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Cartographer for Fetch Robotics Platforms'
+project = u'Cartographer ROS for Fetch Robotics Platforms'
 copyright = u'2016 The Cartographer Authors'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -211,7 +211,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    ('index', 'CartographerFetch.tex', u'Cartographer for Fetch Robotics Platforms Documentation',
+    ('index', 'CartographerFetch.tex', u'Cartographer ROS for Fetch Robotics Platforms Documentation',
      u'The Cartographer Authors', 'manual'),
 ]
 
@@ -240,7 +240,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'cartographer_fetch', u'Cartographer for Fetch Robotics Platforms Documentation',
+    ('index', 'cartographer_fetch', u'Cartographer ROS for Fetch Robotics Platforms Documentation',
      [u'The Cartographer Authors'], 1)
 ]
 
@@ -253,9 +253,9 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    ('index', 'CartographerFetch', u'Cartographer for Fetch Robotics Platforms Documentation',
-     u'The Cartographer Authors', 'Cartographer for Fetch Robotics Platforms',
-     'Provides integration with Fetch Robotics platforms for Cartographer.', 'Miscellaneous'),
+    ('index', 'CartographerFetch', u'Cartographer ROS for Fetch Robotics Platforms Documentation',
+     u'The Cartographer Authors', 'Cartographer ROS for Fetch Robotics Platforms',
+     'Provides integration with Fetch Robotics platforms for Cartographer ROS.', 'Miscellaneous'),
 ]
 
 # Documents to append as an appendix to all manuals.

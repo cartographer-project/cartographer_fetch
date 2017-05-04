@@ -12,9 +12,9 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 
-=========================================
-Cartographer for Fetch Robotics Platforms
-=========================================
+=============================================
+Cartographer ROS for Fetch Robotics Platforms
+=============================================
 
 |build| |docs| |license|
 
@@ -34,16 +34,16 @@ Robotics`_ platforms via `Cartographer ROS`_.
 Documentation
 =============
 
-You will find complete documentation for using Cartographer with ROS at `our
-Read the Docs site`_.
+You will find complete documentation for using Cartographer ROS with Fetch
+Robotics platforms at `our Read the Docs site`_.
 
-.. _our Read the Docs site: https://google-cartographer-ros-for-fetch-robotics-platforms.readthedocs.io/
+.. _our Read the Docs site: https://google-cartographer-ros-for-fetch-robotics-platforms.readthedocs.io
 
 Contributing
 ============
 
-You can find information about contributing to Cartographer's Fetch Robotics platforms
-support at `our Contribution page`_.
+You can find information about contributing to Cartographer ROS's Fetch Robotics
+platforms support at `our Contribution page`_.
 
 .. _our Contribution page: https://github.com/googlecartographer/cartographer_fetch/blob/master/CONTRIBUTING.md
 
