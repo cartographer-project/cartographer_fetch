@@ -12,9 +12,9 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 
-=========================================
-Cartographer for Fetch Robotics Platforms
-=========================================
+=============================================
+Cartographer ROS for Fetch Robotics Platforms
+=============================================
 
 .. toctree::
    :maxdepth: 2
@@ -50,7 +50,7 @@ using `Ninja <https://ninja-build.org>`_.
     cd catkin_ws
     wstool init src
 
-    # Merge the cartographer_fetch code for dependencies.
+    # Merge the cartographer_fetch.rosinstall file and fetch code for dependencies.
     wstool merge -t src https://raw.githubusercontent.com/googlecartographer/cartographer_fetch/master/cartographer_fetch.rosinstall
     wstool update -t src
 
