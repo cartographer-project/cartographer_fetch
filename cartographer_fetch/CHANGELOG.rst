@@ -2,8 +2,8 @@
 Changelog for package cartographer_fetch
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.0 (2017-06-19)
+------------------
 * https://github.com/googlecartographer/cartographer_fetch/compare/0.1.0...0.2.0
 
 0.1.0 (2017-05-18)
