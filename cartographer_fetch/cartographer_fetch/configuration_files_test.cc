@@ -43,7 +43,8 @@ TEST_P(ConfigurationFilesTest, ValidateNodeOptions) {
 }
 
 INSTANTIATE_TEST_CASE_P(ValidateAllNodeOptions, ConfigurationFilesTest,
-                        ::testing::Values("freight.lua"));
+                        ::testing::Values("freight.lua",
+                                          "freight_simulation.lua"));
 
 }  // namespace
 }  // namespace cartographer_ros

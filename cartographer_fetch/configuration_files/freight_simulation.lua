@@ -23,7 +23,7 @@ options = {
   published_frame = "odom",
   odom_frame = "odom",
   provide_odom_frame = false,
-  use_odometry = false,
+  use_odometry = true,
   use_laser_scan = true,
   use_multi_echo_laser_scan = false,
   num_point_clouds = 0,
@@ -38,12 +38,8 @@ MAP_BUILDER.use_trajectory_builder_2d = true
 TRAJECTORY_BUILDER_2D.min_range = 0.
 TRAJECTORY_BUILDER_2D.max_range = 20.
 TRAJECTORY_BUILDER_2D.missing_data_ray_length = 5.
-TRAJECTORY_BUILDER_2D.use_imu_data = true
-
-SPARSE_POSE_GRAPH.constraint_builder.min_score = 0.65
-
-TRAJECTORY_BUILDER_2D.submaps.num_range_data = 120
-TRAJECTORY_BUILDER_2D.motion_filter.max_distance_meters = 0.1
-TRAJECTORY_BUILDER_2D.motion_filter.max_angle_radians = math.rad(0.2)
+-- Not available in simulation.
+TRAJECTORY_BUILDER_2D.use_imu_data = false
+TRAJECTORY_BUILDER_2D.use_online_correlative_scan_matching = true
 
 return options

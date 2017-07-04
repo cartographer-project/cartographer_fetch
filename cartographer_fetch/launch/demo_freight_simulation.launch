@@ -15,11 +15,10 @@
 -->
 
 <launch>
-  <node name="cartographer" pkg="cartographer_ros"
-      type="cartographer_node" args="
-          -configuration_directory $(find cartographer_fetch)/configuration_files
-          -configuration_basename freight.lua"
-      output="screen">
-    <remap from="scan" to="base_scan" />
-  </node>
+  <param name="/use_sim_time" value="true" />
+  <include file="$(find cartographer_fetch)/launch/freight_simulation.launch" />
+  <node name="rviz" pkg="rviz" type="rviz" required="true"
+      args="-d $(find cartographer_fetch)/configuration_files/demo.rviz" />
+  <node name="playbag" pkg="rosbag" type="play"
+      args="--clock $(arg bag_filename) -r 5" />
 </launch>

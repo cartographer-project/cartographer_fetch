@@ -72,9 +72,15 @@ case ``~/Downloads``, and use ``roslaunch`` to bring up the demo:
   .. code-block:: bash
 
     # Download the 2D example bag.
-    wget -P ~/Downloads https://storage.googleapis.com/cartographer-public-data/bags/fetch/cartographer_freight_simulation_demo.bag
+    wget -P ~/Downloads https://storage.googleapis.com/cartographer-public-data/bags/fetch/cartographer_freight_demo.bag
 
     # Launch the 2D demo.
-    roslaunch cartographer_fetch demo.launch bag_filename:=${HOME}/Downloads/cartographer_freight_simulation_demo.bag
+    roslaunch cartographer_fetch offline_freight_2d.launch bag_filename:=${HOME}/Downloads/cartographer_freight_demo.bag
+
+    # Download the 2D example bag with simulated data.
+    wget -P ~/Downloads https://storage.googleapis.com/cartographer-public-data/bags/fetch/cartographer_freight_simulation_demo.bag
+
+    # Launch the 2D simulation demo.
+    roslaunch cartographer_fetch demo_freight_simulation.launch bag_filename:=${HOME}/Downloads/cartographer_freight_simulation_demo.bag
 
 The launch files will bring up ``roscore`` and ``rviz`` automatically.
