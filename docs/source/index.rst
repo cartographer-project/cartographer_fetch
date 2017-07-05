@@ -77,6 +77,16 @@ case ``~/Downloads``, and use ``roslaunch`` to bring up the demo:
     # Launch the 2D demo.
     roslaunch cartographer_fetch offline_freight_2d.launch bag_filenames:=${HOME}/Downloads/cartographer_freight_demo.bag
 
+    # Pure localization demo: We use the larger run as map and the smaller as localization.
+    wget -P ~/Downloads https://storage.googleapis.com/cartographer-public-data/bags/fetch/cartographer_freight_demo.bag
+    wget -P ~/Downloads https://storage.googleapis.com/cartographer-public-data/bags/fetch/cartographer_freight_demo_2.bag
+    # Generate the map: Run the next command, wait until cartographer_offline_node finishes.
+    roslaunch cartographer_fetch offline_freight_2d.launch bag_filenames:=${HOME}/Downloads/cartographer_freight_demo_2.bag
+    # Run pure localization:
+    roslaunch cartographer_fetch demo_freight_localization.launch \
+       bag_filename:=${HOME}/Downloads/cartographer_freight_demo.bag \
+       map_filename:=${HOME}/Downloads/cartographer_freight_demo_2.bag.pbstream
+
     # Download the 2D example bag with simulated data.
     wget -P ~/Downloads https://storage.googleapis.com/cartographer-public-data/bags/fetch/cartographer_freight_simulation_demo.bag
 
