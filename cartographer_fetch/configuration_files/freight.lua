@@ -26,6 +26,7 @@ options = {
   use_odometry = false,
   use_laser_scan = true,
   use_multi_echo_laser_scan = false,
+  num_subdivisions_per_laser_scan = 30,
   num_point_clouds = 0,
   lookup_transform_timeout_sec = 0.1,
   submap_publish_period_sec = 0.3,
@@ -35,6 +36,7 @@ options = {
 
 MAP_BUILDER.use_trajectory_builder_2d = true
 
+TRAJECTORY_BUILDER_2D.scans_per_accumulation = 30
 TRAJECTORY_BUILDER_2D.min_range = 0.
 TRAJECTORY_BUILDER_2D.max_range = 20.
 TRAJECTORY_BUILDER_2D.missing_data_ray_length = 5.
