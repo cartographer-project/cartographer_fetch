@@ -67,17 +67,23 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
+        base_camera_link:
+          Value: true
+        base_camera_optical_frame:
+          Value: true
         base_link:
           Value: true
-        horizontal_laser_link:
+        estop_link:
           Value: true
-        imu_link:
+        l_wheel_link:
+          Value: true
+        laser_link:
           Value: true
         map:
           Value: true
         odom:
           Value: true
-        vertical_laser_link:
+        r_wheel_link:
           Value: true
       Marker Scale: 1
       Name: TF
@@ -88,11 +94,16 @@ Visualization Manager:
         map:
           odom:
             base_link:
-              horizontal_laser_link:
+              base_camera_link:
+                base_camera_optical_frame:
+                  {}
+              estop_link:
                 {}
-              imu_link:
+              l_wheel_link:
                 {}
-              vertical_laser_link:
+              laser_link:
+                {}
+              r_wheel_link:
                 {}
       Update Interval: 0
       Value: true
@@ -133,7 +144,6 @@ Visualization Manager:
       Visual Enabled: true
     - Class: Submaps
       Enabled: true
-      Map frame: map
       Name: Submaps
       Submap query service: /submap_query
       Topic: /submap_list
