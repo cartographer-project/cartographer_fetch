@@ -55,6 +55,9 @@ using `Ninja <https://ninja-build.org>`_.
     wstool update -t src
 
     # Install deb dependencies.
+    # The command 'sudo rosdep init' will print an error if you have already
+    # executed it since installing ROS. This error can be ignored.
+    sudo rosdep init
     rosdep update
     rosdep install --from-paths src --ignore-src -r --rosdistro=${ROS_DISTRO} -y
 
