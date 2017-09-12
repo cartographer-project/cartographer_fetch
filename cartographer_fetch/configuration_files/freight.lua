@@ -23,7 +23,7 @@ options = {
   published_frame = "odom",
   odom_frame = "odom",
   provide_odom_frame = false,
-  use_odometry = false,
+  use_odometry = true,
   num_laser_scans = 1,
   num_multi_echo_laser_scans = 0,
   num_subdivisions_per_laser_scan = 30,
@@ -43,6 +43,13 @@ TRAJECTORY_BUILDER_2D.missing_data_ray_length = 5.
 TRAJECTORY_BUILDER_2D.use_imu_data = true
 
 SPARSE_POSE_GRAPH.constraint_builder.min_score = 0.65
+SPARSE_POSE_GRAPH.optimization_problem.huber_scale = 3
+
+SPARSE_POSE_GRAPH.optimization_problem.consecutive_scan_translation_penalty_factor = 1e3
+SPARSE_POSE_GRAPH.optimization_problem.consecutive_scan_rotation_penalty_factor = 1e2
+
+TRAJECTORY_BUILDER_2D.ceres_scan_matcher.occupied_space_weight = 10
+TRAJECTORY_BUILDER_2D.ceres_scan_matcher.rotation_weight = 40
 
 TRAJECTORY_BUILDER_2D.submaps.num_range_data = 120
 TRAJECTORY_BUILDER_2D.motion_filter.max_distance_meters = 0.1
