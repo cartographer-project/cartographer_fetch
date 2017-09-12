@@ -20,6 +20,8 @@ Panels:
       Expanded:
         - /Submaps1
         - /PointCloud21
+        - /MarkerArray2
+        - /MarkerArray2/Namespaces1
       Splitter Ratio: 0.600671
     Tree Height: 821
   - Class: rviz/Selection
@@ -186,6 +188,17 @@ Visualization Manager:
       Name: MarkerArray
       Namespaces:
         "": true
+      Queue Size: 100
+      Value: true
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Marker Topic: /constraint_list
+      Name: MarkerArray
+      Namespaces:
+        Inter constraints: false
+        Inter residuals: true
+        Intra constraints: false
+        Intra residuals: true
       Queue Size: 100
       Value: true
   Enabled: true
