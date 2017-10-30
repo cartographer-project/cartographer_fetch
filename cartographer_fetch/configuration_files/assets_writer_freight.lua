@@ -22,6 +22,10 @@ options = {
   tracking_frame = "base_link",
   pipeline = {
     {
+      action = "frame_id_filter",
+      keep_frames = {"laser_link"},
+    },
+    {
       action = "min_max_range_filter",
       min_range = 1.,
       max_range = 30.,
