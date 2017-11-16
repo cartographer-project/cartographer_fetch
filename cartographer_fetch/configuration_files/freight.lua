@@ -45,11 +45,11 @@ TRAJECTORY_BUILDER_2D.max_range = 20.
 TRAJECTORY_BUILDER_2D.missing_data_ray_length = 5.
 TRAJECTORY_BUILDER_2D.use_imu_data = true
 
-SPARSE_POSE_GRAPH.constraint_builder.min_score = 0.65
-SPARSE_POSE_GRAPH.optimization_problem.huber_scale = 3
+POSE_GRAPH.constraint_builder.min_score = 0.65
+POSE_GRAPH.optimization_problem.huber_scale = 3
 
-SPARSE_POSE_GRAPH.optimization_problem.consecutive_scan_translation_penalty_factor = 1e3
-SPARSE_POSE_GRAPH.optimization_problem.consecutive_scan_rotation_penalty_factor = 1e2
+POSE_GRAPH.optimization_problem.consecutive_scan_translation_penalty_factor = 1e3
+POSE_GRAPH.optimization_problem.consecutive_scan_rotation_penalty_factor = 1e2
 
 TRAJECTORY_BUILDER_2D.ceres_scan_matcher.occupied_space_weight = 10
 TRAJECTORY_BUILDER_2D.ceres_scan_matcher.rotation_weight = 40
