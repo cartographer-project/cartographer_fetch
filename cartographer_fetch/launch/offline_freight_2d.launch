@@ -23,7 +23,7 @@
   <node name="cartographer_offline_node" pkg="cartographer_ros"
       type="cartographer_offline_node" args="
           -configuration_directory $(find cartographer_fetch)/configuration_files
-          -configuration_basename freight.lua
+          -configuration_basenames freight.lua
           -bag_filenames $(arg bag_filenames)"
       output="screen">
     <remap from="scan" to="base_scan" />
