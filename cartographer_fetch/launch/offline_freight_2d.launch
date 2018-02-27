@@ -15,10 +15,13 @@
 -->
 
 <launch>
+  <arg name="no_rviz" default="false"/>
   <param name="/use_sim_time" value="true" />
 
-  <node name="rviz" pkg="rviz" type="rviz" required="true"
-      args="-d $(find cartographer_fetch)/configuration_files/demo.rviz" />
+  <group unless="$(arg no_rviz)">
+    <node name="rviz" pkg="rviz" type="rviz" required="true"
+        args="-d $(find cartographer_fetch)/configuration_files/demo.rviz" />
+  </group>
 
   <node name="cartographer_offline_node" pkg="cartographer_ros"
       type="cartographer_offline_node" args="
