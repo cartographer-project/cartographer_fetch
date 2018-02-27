@@ -24,6 +24,7 @@
   </group>
 
   <node name="cartographer_offline_node" pkg="cartographer_ros"
+      required="$(arg no_rviz)"
       type="cartographer_offline_node" args="
           -configuration_directory $(find cartographer_fetch)/configuration_files
           -configuration_basenames freight.lua
