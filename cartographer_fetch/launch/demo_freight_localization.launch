@@ -20,7 +20,7 @@
       type="cartographer_node" args="
           -configuration_directory $(find cartographer_fetch)/configuration_files
           -configuration_basename freight_localization.lua
-          -map_filename $(arg map_filename)"
+          -load_state_filename $(arg map_filename)"
       output="screen">
     <remap from="scan" to="base_scan" />
   </node>
